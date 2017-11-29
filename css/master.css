@@ -96,7 +96,7 @@ footer {
 header {
   height: 100vh;
   width: 100vw;
-  background-image: url('/static/rocket_red.svg');
+  background-image: url('../static/rocket_red.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -143,7 +143,7 @@ header {
 }
 
 #work {
-  background-image: url('/static/cityscape1.svg');
+  background-image: url('../static/cityscape1.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
