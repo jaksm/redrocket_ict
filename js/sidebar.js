@@ -7,11 +7,11 @@ button.addEventListener("click", function(event){
 })
 
 function toggleSidebar () {
-  if (sidebar.style.right == 0) {
-    sidebar.style.right = '-320px'
-  } else if (sidebar.style.right == '-320px') {
+  if (sidebar.style.right == '-100vw') {
     sidebar.style.right = '0px'
   } else if (sidebar.style.right == '0px') {
-    sidebar.style.right = '-320px'
+    sidebar.style.right = '-100vw'
+  } else if (sidebar.style.right == '') {
+    sidebar.style.right = '0px'
   }
 }

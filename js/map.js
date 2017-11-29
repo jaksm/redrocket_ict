@@ -90,7 +90,7 @@ function initMap() {
     ]
   });
   var marker = new google.maps.Marker({
-    position: uluru,
+    position: belgrade,
     map: map
   });
 }
