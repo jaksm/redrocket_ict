@@ -54,7 +54,7 @@ button {
   margin: 1em;
 }
 
-input {
+input, textarea {
   padding: 1em;
   width: 100%;
   border: none;
@@ -99,7 +99,7 @@ h3 {
   font-size: 3em;
 }
 
-p, a, li, input, button {
+p, a, li, input, button, textarea, label {
   font-family: 'Fauna One', serif;
 }
 

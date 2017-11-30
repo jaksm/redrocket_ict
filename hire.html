@@ -11,10 +11,7 @@
     <div id="wrapper">
       <div id="nav">
         <a href="#" id="toggle">
-          <svg fill="#e74c3c" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"/>
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-          </svg>
+          <img src="static/toggle.svg" alt="Sidebar Menu Toggle">
         </a>
         <nav id="sidebar">
           <ul class="vh-center text-center">
@@ -26,9 +23,43 @@
         </nav>
       </div>
       <div id="content">
-        <h2>Hire us</h2>
+        <h3>Hire us for <span id="price"></span></h3>
+        <form onsubmit="onSubmit()">
+          <fieldset>
+            <input type="text" name="name" id="name" placeholder="Your name">
+          </fieldset>
+          <fieldset>
+            <input type="tel" name="tel" id="tel" placeholder="Contact tel">
+          </fieldset>
+          <fieldset>
+            <input type="email" name="email" id="email" placeholder="Contact email">
+          </fieldset>
+          <fieldset>
+            <label for="price">Estimated budget</label>
+            <input
+            type="range"
+            id="estPrice"
+            name="price"
+            min="300"
+            max="10000"
+            step="100"
+            value="1000"
+            oninput="display(this.value)"
+            onchange="display(this.value)">
+          </fieldset>
+          <fieldset>
+            <input type="text" id="projectName" name="project_name" placeholder="What can we do for you?">
+          </fieldset>
+          <fieldset>
+            <textarea name="description" id="description" rows="8" cols="80" placeholder="Description"></textarea>
+          </fieldset>
+          <fieldset>
+            <button type="submit" class="btn-ghost" name="submit">Submit</button>
+          </fieldset>
+        </form>
       </div>
     </div>
     <script src="js/sidebar.js"></script>
+    <script src="js/hire.js"></script>
   </body>
 </html>
