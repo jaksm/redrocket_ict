@@ -1,0 +1,103 @@
+#content {
+  position: absolute;
+  padding: 0;
+  height: 100vh;
+}
+
+.card {
+  display: inline-block;
+  margin: .5em;
+  position: relative;
+  background-color: black;
+}
+
+.card > img {
+  opacity: .4;
+}
+
+.card-title {
+  z-index: 3;
+  color: #e74c3c;
+  font-size: 1.5em;
+  transition: color .25s ease-in-out;
+}
+
+.card-title:hover {
+  color: #ecf0f1;
+}
+
+.card-holder {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.card-client {
+  color: white;
+  font-size: 1.5em;
+}
+
+.card-meta {
+  z-index: 3;
+  position: absolute;
+  color: white;
+  font-family: 'Fauna One', serif;
+  font-size: .75em;
+}
+
+#galleryModal {
+  position: fixed;
+  z-index: 4;
+  width: 1000px;
+  background-color: #1d1b17;
+  opacity: .99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 4em;
+}
+
+#galleryModal > .card-holder {
+  display: block;
+  position: absolute;
+  right: 10em;
+  top: 1em;
+  left: auto;
+}
+
+#galleryModal > p {
+  text-align: justify;
+  position: absolute;
+  display: inline;
+  width: 40%;
+  right: 4em;
+  bottom: 4em;
+  margin: 0px;
+}
+
+.material-icons {
+  font-size: 2em;
+}
+
+#closeButton, #previousButton, #nextButton {
+  position: absolute;
+}
+
+#closeButton {
+  top: 1em;
+  right: 1em;
+}
+
+#previousButton, #nextButton {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#previousButton {
+  left: .5em;
+}
+
+#nextButton {
+  right: .5em;
+}
