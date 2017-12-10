@@ -1,3 +1,11 @@
 #content {
   padding: 5em;
 }
+
+#wrapper {
+  height: 100vh;
+}
+
+footer {
+  margin-top: 110px;
+}

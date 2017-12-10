@@ -123,7 +123,8 @@ section {
 }
 
 footer {
-  padding: 5em 5em;
+  height: 15vh;
+  padding: 2.5em 5em;
 }
 
 header {
@@ -212,4 +213,25 @@ header {
   top: 80px;
   right: 120px;
   padding: 1em;
+}
+
+.right, .left {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.footer-nav {
+  padding: 0;
+}
+
+.footer-nav > li {
+  float: left;
+  padding: .5em;
+}
+
+.footerContent {
+  width: 45%;
+  margin: auto;
 }
